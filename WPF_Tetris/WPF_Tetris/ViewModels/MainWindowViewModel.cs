@@ -76,8 +76,8 @@ namespace WPF_Tetris.ViewModels
 
         private void Init_game()
         {
-            block_kind = rnd.Next(1, 7);
-            next_block = rnd.Next(1, 7);
+            block_kind = rnd.Next(1, 8);
+            next_block = rnd.Next(1, 8);
             status_x = 4;
             status_y = -3;
 
@@ -217,6 +217,10 @@ namespace WPF_Tetris.ViewModels
                 Block_down();
                 StartTimer();
             }
+            else
+            {
+                DrawCrash();
+            }
         }
 
         private void DrawNext()
@@ -306,7 +310,7 @@ namespace WPF_Tetris.ViewModels
 
             DrawBufBlock(block_kind, _block_buf);
 
-            next_block = rnd.Next(1, 7);
+            next_block = rnd.Next(1, 8);
             if (Check_Can_Move(Constants.TETRIT_MOVE_DOWN))
             {
                 DrawNext();

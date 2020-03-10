@@ -302,7 +302,7 @@
                 <TextBlock Text="LEVEL" FontSize="36" FontFamily="Yet R" Foreground="#FF2D6435" HorizontalAlignment="Center"/>
                 <TextBox IsReadOnly="True" Text="{Binding Game_level}" FontSize="36" FontFamily="Yet R" Margin="10"/>
             </StackPanel>
-            <Button Grid.Row="1" x:Name="button" Content="Start" Height="60" Click="Button_Click" Focusable="False" FontSize="20"/>
+            <Button Grid.Row="1" x:Name="button" Content="Start/Stop" Height="60" Click="Button_Click" Focusable="False" FontSize="20"/>
         </Grid>
 
     </Grid>

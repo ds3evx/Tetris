@@ -36,6 +36,8 @@ namespace WPF_Tetris.Converters
                     return new SolidColorBrush(Colors.Magenta);
                 case Constants.Block_6:
                     return new SolidColorBrush(Colors.Lime);
+                case Constants.Block_7:
+                    return new SolidColorBrush(Colors.Violet);
             }
             return new SolidColorBrush(Colors.Black);
         }
